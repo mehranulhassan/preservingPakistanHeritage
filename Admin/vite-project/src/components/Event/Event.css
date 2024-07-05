@@ -1,0 +1,50 @@
+/* Apply background image and basic styles to the form container */
+.form-container {
+    background-image: url('../../assets/Events.JPG'); /* Make sure to adjust the path if necessary */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Style the form itself */
+  .form {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Style each form label */
+  .form label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  /* Style the input fields */
+  .form input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+  }
+  
+  /* Style the submit button */
+  .form button {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Change button color on hover */
+  .form button:hover {
+    background-color: #218838;
+  }
+  

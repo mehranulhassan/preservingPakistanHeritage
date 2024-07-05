@@ -1,0 +1,91 @@
+/* General container styling */
+.addproduct {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    width: 100%;
+    max-width: 800px; /* Increased max width for better readability */
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .addproduct-itemfield {
+    margin-bottom: 20px;
+  }
+  
+  .addproduct-itemfield p {
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #333;
+    font-weight: 600;
+  }
+  
+  .addproduct-itemfield input,
+  .addproduct-itemfield select {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+  }
+  
+  .addproduct-itemfield input:focus,
+  .addproduct-itemfield select:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  
+  .addproduct-thumbnail-img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .addproduct-thumbnail-img:hover {
+    transform: scale(1.05);
+  }
+  
+  .addproduct-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 14px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    align-self: flex-start; /* Align button to the left */
+  }
+  
+  .addproduct-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Specific styling for price fields to be displayed side by side */
+  .addproduct-price {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .addproduct-price .addproduct-itemfield {
+    flex: 1;
+  }
+  
+  @media (max-width: 768px) {
+    .addproduct {
+      width: 100%;
+    }
+  
+    .addproduct-price {
+      flex-direction: column;
+    }
+  }
+  

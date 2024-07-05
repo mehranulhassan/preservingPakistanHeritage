@@ -1,0 +1,81 @@
+.listproduct {
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .listproduct h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #333;
+  }
+  
+  .listproduct-container {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .listproduct-header {
+    display: flex;
+    background-color: #f0f0f0;
+    font-weight: bold;
+  }
+  
+  .listproduct-header .listproduct-column {
+    flex: 1;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .listproduct-body {
+    display: grid;
+    gap: 1px;
+  }
+  
+  .listproduct-row {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    align-items: center;
+    background-color: #fff;
+  }
+  
+  .listproduct-row:hover {
+    background-color: #f9f9f9;
+  }
+  
+  .listproduct-column {
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .listproduct-product-image {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 4px;
+  }
+  
+  .listproduct-remove-btn {
+    padding: 5px 10px;
+    background-color: #ff4c4c;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .listproduct-remove-btn:hover {
+    background-color: #e04343;
+  }
+  
+  .listproduct-remove-icon {
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+    vertical-align: middle;
+  }
+  

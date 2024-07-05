@@ -1,0 +1,92 @@
+import React, { useState } from 'react';
+import axios from 'axios';
+import './Event.css'; // Import the CSS file
+
+const AddEventForm = () => {
+  const [date, setDate] = useState('');
+  const [name, setName] = useState('');
+  const [startDate, setStartDate] = useState('');
+  const [endDate, setEndDate] = useState('');
+  const [location, setLocation] = useState('');
+
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+  
+    try {
+      const response = await axios.post('http://localhost:4000/add', {
+        date,
+        name,
+        startDate,
+        endDate,
+        location
+      });
+  
+      if (response.status !== 201) {
+        console.error('Error adding event:', response.data);
+        alert('Event addition failed. Please check your input and try again.');
+        return;
+      }
+  
+      console.log('Event added successfully:', response.data);
+      alert('Event added successfully!');
+    } catch (error) {
+      console.error('Error adding event:', error);
+      alert('An error occurred. Please try again later.');
+    }
+  };
+
+  return (
+    <div className="form-container">
+      <form onSubmit={handleSubmit} className="form">
+        <label>
+          Date:
+          <input
+            type="date"
+            value={date}
+            onChange={(event) => setDate(event.target.value)}
+            required
+          />
+        </label>
+        <label>
+          Name:
+          <input
+            type="text"
+            value={name}
+            onChange={(event) => setName(event.target.value)}
+            required
+          />
+        </label>
+        <label>
+          Start Date:
+          <input
+            type="datetime-local"
+            value={startDate}
+            onChange={(event) => setStartDate(event.target.value)}
+            required
+          />
+        </label>
+        <label>
+          End Date:
+          <input
+            type="datetime-local"
+            value={endDate}
+            onChange={(event) => setEndDate(event.target.value)}
+            required
+          />
+        </label>
+        <label>
+          Location:
+          <input
+            type="text"
+            value={location}
+            onChange={(event) => setLocation(event.target.value)}
+            required
+          />
+        </label>
+        <button type="submit">Add Event</button>
+      </form>
+    </div>
+  );
+};
+
+export default AddEventForm;
