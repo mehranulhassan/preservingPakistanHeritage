@@ -1,0 +1,46 @@
+/* Breadcums.css */
+
+.breadcrumbs {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    padding: 10px 0;
+    color: #6c757d;
+  }
+  
+  .breadcrumb-item {
+    display: flex;
+    align-items: center;
+    color: #007bff;
+    text-transform: capitalize;
+    transition: color 0.3s ease;
+  }
+  
+  .breadcrumb-item:hover {
+    color: #0056b3;
+  }
+  
+  .breadcrumb-item img.arrow-icon {
+    margin: 0 8px;
+    width: 10px;
+    height: 10px;
+  }
+  
+  .breadcrumb-item:last-child {
+    color: #212529;
+    font-weight: 600;
+  }
+  
+  .breadcrumb-item:last-child:hover {
+    color: #212529;
+  }
+  
+  .breadcrumb-item a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .breadcrumb-item a:hover {
+    color: inherit;
+  }
+  
