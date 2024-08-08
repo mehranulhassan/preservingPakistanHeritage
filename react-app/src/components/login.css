@@ -1,0 +1,170 @@
+.box-form {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+  padding: 0 2rem;
+  background-color: #f2f2f2;
+}
+
+.box-form .left {
+  position: relative;
+  width: 40%;
+}
+
+.box-form .left img {
+  width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+}
+
+.box-form .left .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  font-size: 2rem;
+  border-radius: 0.5rem;
+}
+
+.box-form .right {
+  width: 55%;
+  padding: 0 2rem;
+}
+
+.box-form .right form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.box-form .right form h5 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 2rem;
+}
+
+.box-form .right form .inputs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.box-form .right form .inputs input {
+  width: 100%;
+  padding: 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: #fff;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.box-form .right form .remember-me--forget-password {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.box-form .right form .remember-me--forget-password label {
+  display: flex;
+  align-items: center;
+}
+
+.box-form .right form .remember-me--forget-password label input {
+  margin-right: 1rem;
+}
+
+.box-form .right form .remember-me--forget-password a {
+  color: #007bff;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.box-form .right form button {
+  width: 100%;
+  padding: 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: #007bff;
+  color: white;
+  font-size: 1.2rem;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.box-form .right form button:hover {
+  background-color: #0056b3;
+}
+
+.box-form .right form .inputs input:focus {
+  outline: none;
+  box-shadow: 0 2px 4px rgba(0, 123, 255, 0.5);
+}
+
+.box-form .right form button:focus {
+  outline: none;
+  box-shadow:0 2px 4px rgba(0, 123, 255, 0.5);
+}
+
+.box-form .right form .inputs input::placeholder {
+  color: #ccc;
+}
+
+.box-form .right form .inputs input:-webkit-autofill,
+.box-form .right form .inputs input:-webkit-autofill:hover,
+.box-form .right form .inputs input:-webkit-autofill:focus,
+.box-form .right form .inputs input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px white inset !important;
+  box-shadow: 0 0 0 30px white inset !important;
+}
+
+.box-form .right form .forgot-password {
+  font-size: 0.9rem;
+  color: #007bff;
+  text-decoration: none;
+  margin-top: 1rem;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .box-form {
+    flex-direction: column;
+  }
+
+  .box-form .left,
+  .box-form .right {
+    width: 100%;
+  }
+
+  .box-form .left img {
+    width: auto;
+    height: 200px;
+    margin-bottom: 2rem;
+  }
+
+  .box-form .left .overlay {
+    position: relative;
+    background-color: transparent;
+    color: #fff;
+    font-size: 1.5rem;
+    padding: 1rem;
+    text-align: left;
+  }
+}

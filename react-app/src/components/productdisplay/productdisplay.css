@@ -1,0 +1,124 @@
+/* productdisplay.css */
+
+.product-display {
+  display: flex;
+  padding: 20px;
+  gap: 20px;
+}
+
+.product-display-left {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.product-display-img-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.product-display-img-list img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border: 1px solid #ddd;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.product-display-img-list img:hover {
+  transform: scale(1.1);
+}
+
+.product-display-main-img {
+  width: 400px;
+  height: auto;
+  border: 1px solid #ddd;
+}
+
+.product-display-right {
+  flex: 1;
+  padding: 0 20px;
+}
+
+.product-display-star {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin: 10px 0;
+}
+
+.product-display-star img {
+  width: 20px;
+  height: 20px;
+}
+
+.product-display-prices {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.product-display-price-old {
+  text-decoration: line-through;
+  color: #888;
+}
+
+.product-display-price-new {
+  color: #e60023;
+  font-weight: bold;
+}
+
+.product-display-description {
+  margin: 20px 0;
+}
+
+.product-display-size {
+  margin: 20px 0;
+}
+
+.product-display-size div {
+  display: inline-block;
+  margin-right: 10px;
+  padding: 5px 10px;
+  border: 1px solid #ddd;
+  cursor: pointer;
+}
+
+.product-display-size div:hover {
+  background-color: #f0f0f0;
+}
+
+/* New styles for selected size */
+.product-display-size div.selected {
+  background-color: #ff0033;
+  color: #fff;
+  border-color: #ff004c;
+}
+
+.product-display-add-to-cart {
+  display: block;
+  margin: 20px 0;
+  padding: 10px 20px;
+  background-color: red;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.product-display-add-to-cart:hover {
+  background-color: #0056b3;
+}
+
+.product-display-category,
+.product-display-tags {
+  margin: 10px 0;
+}
+
+.product-display-category span,
+.product-display-tags span {
+  font-weight: bold;
+}

@@ -1,0 +1,97 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-logo img {
+  height: 50px;
+}
+
+.navbar-heading {
+  margin-left: 10px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 10;
+}
+
+.navbar-item {
+  margin: 0 10px;
+}
+
+.navbar-link {
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.3s ease;
+}
+
+.navbar-link:hover {
+  color: #66fcf1;
+}
+
+.navbar-auth {
+  margin-left: 20px;
+}
+
+.navbar-auth button,
+.navbar-login {
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.navbar-auth button:hover,
+.navbar-login:hover {
+  color: #66fcf1;
+}
+
+.navbar-cart {
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+  position: relative; /* Added to position the cart count properly */
+}
+
+.navbar-cart-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #fff;
+}
+
+.navbar-cart img {
+  height: 30px; /* Adjusted for smaller cart image */
+  margin-left: 5px; /* Adjusted margin to align properly */
+}
+
+.navbar-cart-count {
+  background-color: #f90;
+  border-radius: 50%;
+  color: black;
+  font-size: 12px;
+  padding: 2px 6px;
+  position: absolute;
+  top: -8px;
+  right: -8px;
+}

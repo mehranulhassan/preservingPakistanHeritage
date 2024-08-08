@@ -1,0 +1,61 @@
+.popular {
+    padding: 20px;
+  }
+  
+  .popular h1 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .popular hr {
+    border: 1px solid #ccc;
+    margin: 20px 0;
+  }
+  
+  .popular-item {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 20px;
+  }
+  
+  .item {
+    border: 1px solid #ccc;
+    padding: 10px;
+  }
+  
+  .item img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .item p {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .item-prices {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+  
+  .item-price-new,
+  .item-price-old {
+    font-size: 14px;
+    color: #888;
+  }
+  .item {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 20px; /* Add space between items */
+  }
+  
+  .item img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px; /* Add space between the image and other elements */
+  }
+    
